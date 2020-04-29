@@ -4,19 +4,19 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ul-left-side">
       <li class="nav-item active">
         <%= link_to "Posts", posts_path, class: "nav-link" %>
       </li>
       <% if !current_user%>
-      <li class="nav-item">
+      <li class="nav-item left-side">
         <%= link_to "Sign in", new_user_session_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
          <%= link_to "Sign up", new_user_registration_path, class: "nav-link"%>
       </li>
       <% else %>
-      <li class="nav-item">
+      <li class="nav-item left-side">
          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link"%>
       </li>
       <li class="nav-item dropdown">

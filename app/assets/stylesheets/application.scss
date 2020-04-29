@@ -12,3 +12,12 @@
  *
  */
  @import "bootstrap";
+
+ @media screen and (min-width: 992px) {
+    .ul-left-side {
+        width: 100%;
+    }
+     .left-side {
+         margin-left: auto;
+     }
+ }
