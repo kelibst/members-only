@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <%= link_to "Gosip", root_path, class: "navbar-brand" %>
+  <%= link_to "Gossip Zone", root_path, class: "navbar-brand" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,12 +8,14 @@
       <li class="nav-item active">
         <%= link_to "Posts", posts_path, class: "nav-link" %>
       </li>
+      <% if !current_user%>
       <li class="nav-item">
         <%= link_to "Sign in", new_user_session_path, class: "nav-link"%>
       </li>
       <li class="nav-item">
          <%= link_to "Sign up", new_user_registration_path, class: "nav-link"%>
       </li>
+      <% else %>
       <li class="nav-item">
          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link"%>
       </li>
@@ -26,6 +28,7 @@
           <a class="dropdown-item" href="#">Edit User</a>
         </div>
       </li>
+      <%end%>
     </ul>
   </div>
 </nav>
