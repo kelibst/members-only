@@ -1,24 +1,34 @@
-# README
+# members-only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, we ’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it. [Microverse](https:www.microverse.org/) - @microverseinc
 
-Things you may want to cover:
+# member-only ([The Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication))
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby 
+- Rails
 
-* Configuration
+## Run
+- Clone repo
+- Run bundle install 
 
-* Database creation
+## Authors
 
-* Database initialization
+👤 **Kelly Booster**
 
-* How to run the test suite
+- Github: [@kelibst](https://github.com/kelibst)
+- Twitter: [@keli_booster](https://twitter.com/keli_booster)
+- Linkedin: [Kekeli (Jiresse) Dogbevi
+](https://www.linkedin.com/in/kekeli-dogbevi-958272108/)
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Lhoussaine Bouaik**
+- Github: [@bouaik](https://github.com/bouaik)
+- Twitter: [@bouaik](https://twitter.com/LhoussaineBoua1 )
+- Linkedin: [bouaik](https://www.linkedin.com/in/lhoussaine-bouaik-06858419a/)
 
-* Deployment instructions
 
-* ...
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
