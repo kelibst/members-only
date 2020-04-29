@@ -1,17 +1,18 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
 
-<h1 class="text-center text-secondary"><%= @post.title %>:</h1>
+<h1 class="text-center text-secondary"><%= @post.title %></h1>
 
     <p class="text-center jumbotron">
       <%= @post.body %> <br>
-      <strong>Created by: </strong> <%= @post.user.email.split('@')[0]%>
+      <% if current_user %>
+        <strong>Created by: </strong> <%= @post.user.email.split('@')[0]%>
+      <% end %>
     </p>
 
-
-
-
-
-<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-success" %> |
-<%= link_to 'Back', posts_path, class: "btn-primary"%>
+<% if current_user == @post.user%>
+        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-success" %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+        <% end %>
+<%= link_to 'Back', posts_path, class: "btn btn-primary"%>
 </div>
