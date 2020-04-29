@@ -8,5 +8,9 @@
         autem nulla blanditiis, maxime eaque id in illum reiciendis itaque. Magnam cumque neque nisi consequuntur animi
         deserunt quod expedita, hic iure alias.
     </p>
-    <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary"%>
+    <% if current_user %>
+        <%= link_to "Posts", posts_path, class: "btn btn-primary"%>
+    <% else %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary"%>
+    <% end %>
 </div>
