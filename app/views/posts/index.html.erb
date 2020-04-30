@@ -12,10 +12,9 @@
             <p><strong>Created by : </strong><%= post.user.email.split("@")[0] %></p>
           <% end%>
       </p>
-        <%= link_to 'Show', post, class: "btn btn-primary" %>
+        <%= link_to 'Show', posts_path, class: "btn btn-primary" %>
         <% if current_user == post.user%>
-        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-success" %>
-        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+        <%= link_to 'Destroy', posts_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
         <% end %>
     </div>
   </div>
