@@ -14,7 +14,6 @@
       </p>
         <%= link_to 'Show', posts_path, class: "btn btn-primary" %>
         <% if current_user == post.user%>
-        <%= link_to 'Destroy', posts_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
         <% end %>
     </div>
   </div>
