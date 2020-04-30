@@ -12,9 +12,6 @@
             <p><strong>Created by : </strong><%= post.user.email.split("@")[0] %></p>
           <% end%>
       </p>
-        <%= link_to 'Show', posts_path, class: "btn btn-primary" %>
-        <% if current_user == post.user%>
-        <% end %>
     </div>
   </div>
 <% end %>
